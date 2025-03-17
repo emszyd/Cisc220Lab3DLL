@@ -17,7 +17,9 @@ Playlist::Playlist(string s) {
 	list = new DLL();
 
 //	/*****************************************************************************************/
-//	// (5 pts) Step 1:  list->push(title, artist, min, sec);
+	list->push(title, artist, min, sec);
+	readList(s);
+        //	// (5 pts) Step 1:  list->push(title, artist, min, sec);
 //	// Write the Push Method in your DLL.cpp.  The push method must include a case for
 //	//creating the very first node in the list.
 //	// It should take as input a string for the song's title, a string for the artist an int for
@@ -26,11 +28,12 @@ Playlist::Playlist(string s) {
 //	//To test, save and run your code.  If you get a message saying, Done Reading File,  it's
 //	//possible your push method works, but you won't know for sure until you complete Step 2
 //	//(Below)
-//
-//	readList(s);  // uncomment this line to test the push method you wrote in the DLL.cpp file.
-//
-//
-//
+// readList(s);  // uncomment this line to test the push method you wrote in the DLL.cpp file.
+
+
+	list->printList();
+	list->printList();
+	cout << endl;
 ///*****************************************************************************************/
 //	//( 6 pts) Step 2: list->printList();
 //	// write the printList method in the DLL.cpp.  Th printList method should loop through
