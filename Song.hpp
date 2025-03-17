@@ -18,6 +18,4 @@ public:
 	void printSong();
 };
 
-
-
 #endif /* SONG_HPP_ */

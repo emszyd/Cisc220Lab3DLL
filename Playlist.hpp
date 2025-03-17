@@ -6,8 +6,6 @@ using namespace std;
 
 class Playlist {
 	DLL *list;  // the doubly linked list of playsongs
-	int lenmin;
-	int lensec;
 public:
 	Playlist();//constructor that defaults filename to be read in to MyListOfSongs.txt
 	Playlist(string fname);  // constructor that lets you enter your own text file.
